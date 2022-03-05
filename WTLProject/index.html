@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Tulip</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style1.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOP</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SHOP</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="image/background.jpg" style="width:100%;height:695px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1><i> Fresh Flowers</i></h1>
+      <p><b><i>Natural and beautiful flowers here!</i></b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="image/index3.jpg" style="width:100%;height:695px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h2><i>Grab your Perfect Bunch for Every Occassion</i></h2>
+       
+    </div>
+  </div>
+  
+
+  <!-- About Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">The Tulip FLower Shop</h2>
+    <p class="w3-opacity"><i>Your favourite flowers!</i></p>
+    <p class="w3-justify"> Buy fresh flowers without worrying about the price. 
+      Free same-day delivery. Cash collection, transfer or card payment. 
+      Perfect choice for special occasions: Birthday, Anniversary, Romantic, Women's Day, Valentine's Day, Mother's Day.
+      In addition, Flowerstore accepts orders for wreaths, flower shelves for grand openings, congratulations and other occasions..</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>AMELIA (FLORIST CHOICE HAND TIED BOUQUET)</p>
+        <img src="image/pic12.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:95%">
+      </div>
+      <div class="w3-third">
+        <p>ANNIE (FLORISTS CHOICE BASKET ARRANGEMENT)</p>
+        <img src="image/pic11.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:95%">
+      </div>
+      <div class="w3-third">
+        <p>SEASONAL AND MONTHLY FLOWERS</p>
+        <img src="image/pic4.jpg" class="w3-round" alt="Random Name" style="width:95%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Shop Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Buy your favourite flowers and get it on your doorstep!</h2>
+      <p class="w3-opacity w3-center"><i>Login to continue</i></p><br>
+
+      
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom "></div>
+        <div class="w3-third w3-margin-bottom container ">
+          <div  style="padding: 50px;">
+            <div class="container">   
+              
+              <input type="text" placeholder="Username" id="username" >  
+              <br><br>
+               
+              <input type="password" placeholder="Password" id="password" >  
+              <br><br>
+            
+          </div>   
+            <div class="w3-container  w3-center">
+             
+              <button class="w3-button w3-black w3-margin-bottom " onclick="buttonClick();">Login</button>
+            </div>
+           </div>
+        </div>
+        <div class="w3-third w3-margin-bottom "></div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div style="text-align: center;"> 
+      
+        <i class="fa fa-map-marker" style="width:30px"></i> India,Kerala<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+    
+   
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="image/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+
+}
+
+function buttonClick() { 
+  var username1="admin";
+    var password1="admin";
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (username=="" || password=="" )
+     {
+       alert("Enter user name and password");
+     }
+    else if(username1==username && password1==password)
+    {
+    
+    window.location.href = "temp.html";
+    }
+    else
+    {
+    alert("INCORRECT USERNAME OR PASSWORD");
+   
+    }
+ 
+}
+</script>
+
+</body>
+</html>
